@@ -1,0 +1,16 @@
+.heading {
+  color: var(--gray-600);
+
+  background-color: var(--gray-200);
+  padding: 4px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  margin: 0 0 16px 0;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,102 @@
+.landingContainer {
+  background-color: var(--gray-default);
+  padding: 96px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .landingContainer {
+    padding: 64px 0;
+  }
+}
+
+.landingContainer p {
+  margin: 0;
+}
+
+.landingContainer .imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  position: relative;
+}
+
+.landingContainer .imageContainer::after {
+  content: "";
+  background-color: var(--gray-200);
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.landingContainer .image {
+  width: 280px;
+  border: 8px solid var(--gray-default);
+}
+
+@media screen and (max-width: 991px) {
+  .textContainer {
+    order: 2;
+  }
+
+  .landingContainer .imageContainer {
+    justify-content: center;
+    margin-bottom: 68px;
+  }
+
+  .landingContainer .imageContainer::after {
+    width: 280px;
+    height: 10px;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.information {
+  margin: 48px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.information .locationPart,
+.information .activePart {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.information .iconContainer {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information .active {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--emerald);
+}
+
+.landingContainer .socialMediaList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  column-gap: 4px;
+}
+
+.landingContainer .socialMediaList li {
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

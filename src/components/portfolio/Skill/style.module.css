@@ -1,0 +1,26 @@
+.skillsContainer {
+  background-color: var(--gray-default);
+  padding: 96px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .skillsContainer {
+    padding: 64px 0;
+  }
+}
+
+.skillsContainer .skillDataContainer {
+  justify-content: flex-start;
+  row-gap: 48px;
+}
+
+.skillDataContainer .imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.skillDataContainer h4 {
+  text-align: center;
+  margin: 8px 0 0 0;
+  color: var(--gray-600);
+}

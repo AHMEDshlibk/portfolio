@@ -1,0 +1,51 @@
+.getInTouchContainer {
+  background-color: var(--gray-default);
+  padding: 96px 0;
+}
+
+.getInTouchContainer .contactContainer {
+  text-align: center;
+}
+
+.contactContainer .callMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .contactContainer .callMe {
+    column-gap: 16px;
+  }
+}
+
+.contactContainer .callMe h2 {
+  margin: 0;
+  color: var(--gray-900);
+}
+
+.contactContainer p {
+  color: var(--gray-600);
+
+  margin: 32px 0 0 0;
+}
+
+.socialMediaList {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 4px;
+}
+
+.socialMediaList li {
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

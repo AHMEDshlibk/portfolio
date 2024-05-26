@@ -1,0 +1,139 @@
+.navbar {
+  background-color: var(--gray-default);
+  padding: 16px 0;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarContainer h1 {
+  color: var(--gray-900);
+  margin: 0px;
+  font-weight: 500;
+}
+
+.navbarContainer .links a {
+  color: var(--gray-600);
+  text-decoration: none;
+}
+
+.navbarContainer .vr {
+  background-color: var(--gray-100);
+  opacity: 1;
+  width: 1px;
+  height: 24px;
+  align-self: auto;
+}
+
+.navbarContainer .button {
+  background-color: var(--gray-900);
+  color: var(--gray-50);
+  padding: 6px 16px;
+  border: none;
+}
+
+.navbarContainer .icon {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.navbarContainer nav {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.navbarContainer nav ul {
+  display: flex;
+  list-style: none;
+  column-gap: 24px;
+  margin: 0;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar .ToggleButton {
+  display: none;
+  z-index: 10000;
+}
+
+.navbar .active {
+  right: 0;
+}
+
+.navbar .textShow {
+  display: none;
+  margin: 0;
+
+  color: var(--gray-600);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar nav {
+    display: flex;
+    flex-grow: 1;
+  }
+  .navbar .navContainer {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 24px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: var(--gray-default);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .navbarContainer nav ul {
+    flex-direction: column;
+    padding: 16px;
+    align-items: flex-start;
+    row-gap: 16px;
+  }
+
+  .navbarContainer nav ul:first-child {
+    border-top: 1px solid var(--gray-100);
+    border-bottom: 1px solid var(--gray-100);
+    margin-top: 68px;
+  }
+
+  .navbarContainer nav ul:last-child li:first-child {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .navbarContainer nav ul:last-child li:last-child {
+    width: 100%;
+  }
+  .navbarContainer nav ul:last-child li:last-child button {
+    width: 100%;
+  }
+
+  .navbar .ToggleButton {
+    display: inline-block;
+  }
+
+  .navbar .textShow {
+    display: inline;
+  }
+  .navbarContainer .vr {
+    display: none;
+  }
+}

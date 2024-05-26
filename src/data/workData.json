@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Facebook",
+      "discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+      "skills": [
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "sass",
+        "node",
+        "java",
+        ".net"
+      ],
+      "image": "/src/assets/project/Picture.png"
+    },
+    {
+      "id": "2",
+      "name": "YouTube",
+      "discription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+      "skills": [
+        "c#",
+        "python",
+        "c++",
+        "typescript",
+        "sass",
+        "node",
+        "express",
+        ".net"
+      ],
+      "image": "/src/assets/project/Picture.png"
+    }
+  ],
+  "skills": [
+    {
+      "id": "1",
+      "title": "Javascript",
+      "img": "/src/assets/skills/icon-javscript.png"
+    },
+    {
+      "id": "2",
+      "title": "Typescript",
+      "img": "/src/assets/skills/icon-typescript.png"
+    },
+    {
+      "id": "3",
+      "title": "React",
+      "img": "/src/assets/skills/icon-react.png"
+    },
+    {
+      "id": "4",
+      "title": "Node.js",
+      "img": "/src/assets/skills/icon-nodejs.png"
+    },
+    {
+      "id": "5",
+      "title": "Express.js",
+      "img": "/src/assets/skills/icon-express.png"
+    },
+    {
+      "id": "6",
+      "title": "MongoDB",
+      "img": "/src/assets/skills/icon-mongodb.png"
+    },
+    {
+      "id": "7",
+      "title": "Sass/Scss",
+      "img": "/src/assets/skills/icon-sass.png"
+    },
+    {
+      "id": "8",
+      "title": "Tailwindcss",
+      "img": "/src/assets/skills/icon-tailwindcss.png"
+    },
+    {
+      "id": "9",
+      "title": "Figma",
+      "img": "/src/assets/skills/icon-figma.png"
+    },
+    {
+      "id": "10",
+      "title": "Git",
+      "img": "/src/assets/skills/icon-git.png"
+    }
+  ]
+}

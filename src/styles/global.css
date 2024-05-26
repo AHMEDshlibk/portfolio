@@ -1,0 +1,203 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  /* light gray */
+  --gray-default: #fff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --gray-950: #030712;
+
+  /* colors */
+  --emerald: #10b981;
+
+  /* fonts */
+
+  /* heading h1 */
+  @media screen and (min-width: 1024px) {
+    --font-size-h1: 60px;
+    --line-hight-h1: 72px;
+    --letter-spacing-h1: -2%;
+    --font-weight-h1: 700;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    --font-size-h1: 48px;
+    --line-hight-h1: 48px;
+    --letter-spacing-h1: -2%;
+    --font-weight-h1: 700;
+  }
+
+  @media screen and (max-width: 767px) {
+    --font-size-h1: 36px;
+    --line-hight-h1: 40px;
+    --letter-spacing-h1: 0;
+    --font-weight-h1: 600;
+  }
+
+  .heading-h1 {
+    font-size: var(--font-size-h1);
+    line-height: var(--line-hight-h1);
+    letter-spacing: var(--letter-spacing-h1);
+    font-weight: var(--font-weight-h1);
+  }
+
+  /* heading h2 */
+  @media screen and (min-width: 1024px) {
+    --font-size-h2: 36px;
+    --line-hight-h2: 40px;
+    --letter-spacing-h2: -2%;
+    --font-weight-h2: 600;
+  }
+
+  @media screen and (max-width: 1023px) {
+    --font-size-h2: 18px;
+    --line-hight-h2: 28px;
+    --letter-spacing-h2: -2%;
+    --font-weight-h2: 600;
+  }
+
+  .heading-h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--line-hight-h2);
+    letter-spacing: var(--letter-spacing-h2);
+    font-weight: var(--font-weight-h2);
+  }
+
+  /* heading h3 */
+  @media screen and (min-width: 1024px) {
+    --font-size-h3: 30px;
+    --line-hight-h3: 36px;
+    --letter-spacing-h3: -2%;
+  }
+
+  @media screen and (max-width: 1023px) {
+    --font-size-h3: 24px;
+    --line-hight-h3: 32px;
+    --letter-spacing-h3: -2%;
+  }
+
+  .heading-h3 {
+    font-size: var(--font-size-h3);
+    line-height: var(--line-hight-h3);
+    letter-spacing: var(--letter-spacing-h3);
+  }
+
+  .heading-h3.bold {
+    font-weight: 700;
+  }
+
+  .heading-h3.semibold {
+    font-weight: 600;
+  }
+
+  /* subtitle */
+  @media screen and (min-width: 1024px) {
+    --font-size-subtitle: 20px;
+    --line-hight-subtitle: 28px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    --font-size-subtitle: 18px;
+    --line-hight-subtitle: 28px;
+  }
+
+  .subtitle {
+    font-size: var(--font-size-subtitle);
+    line-height: var(--line-hight-subtitle);
+  }
+
+  .subtitle.normal {
+    font-weight: 400;
+  }
+  .subtitle.semibold {
+    font-weight: 600;
+  }
+
+  /* body 1 */
+  @media screen and (min-width: 1024px) {
+    --font-size-body-1: 20px;
+    --line-hight-body-1: 28px;
+    --font-weight-body-1: 400;
+  }
+
+  @media screen and (max-width: 1023px) {
+    --font-size-body-1: 18px;
+    --line-hight-body-1: 28px;
+    --font-weight-body-1: 400;
+  }
+
+  .body-1 {
+    font-size: var(--font-size-body-1);
+    line-height: var(--line-hight-body-1);
+    font-weight: var(--font-weight-body-1);
+  }
+
+  /* body 2 */
+  --font-size-body-2: 16px;
+  --line-hight-body-2: 24px;
+
+  .body-2 {
+    font-size: var(--font-size-body-2);
+    line-height: var(--line-hight-body-2);
+  }
+
+  .body-2.normal {
+    font-weight: 400;
+  }
+
+  .body-2.normal.underline {
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  .body-2.medium {
+    font-weight: 500;
+  }
+
+  .body-2.semibold {
+    font-weight: 600;
+  }
+
+  /* body 3 */
+  --font-size-body-3: 14px;
+  --line-hight-body-3: 20px;
+
+  .body-3 {
+    font-size: var(--font-size-body-3);
+    line-height: var(--line-hight-body-3);
+  }
+
+  .body-3.normal {
+    font-weight: 400;
+  }
+
+  .body-3.medium {
+    font-weight: 500;
+  }
+}
+
+.dark {
+  /* dark gray */
+  --gray-default: #030712;
+  --gray-50: #111827;
+  --gray-100: #1f2937;
+  --gray-200: #374151;
+  --gray-300: #4b5563;
+  --gray-400: #6b7280;
+  --gray-500: #9ca3af;
+  --gray-600: #d1d5db;
+  --gray-700: #e5e7eb;
+  --gray-800: #f3f4f6;
+  --gray-900: #f9fafb;
+  --gray-950: #ffffff;
+}
