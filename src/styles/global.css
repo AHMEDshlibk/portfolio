@@ -201,3 +201,7 @@
   --gray-900: #f9fafb;
   --gray-950: #ffffff;
 }
+
+div {
+  background-color: red;
+}
